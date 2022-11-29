@@ -1,8 +1,7 @@
 # Redbee Challenge - Simpsons Quotes API
+![Homero](images/homero.gif) 
 
-![Redbee](images/Redbee.png) ![Simpson](images/the-simpson-simpson.gif)
-
-## Prerequisitos
+## Pre-requisitos
 * Minikube instalado y funcionando.
 * Obtener la ip del cluster a través del siguiente comando (se utilizará en los siguientes pasos):
 ```bash
