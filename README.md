@@ -18,11 +18,11 @@ minikube addons enable ingress
 ### Pasos:
 1) Clonar este repositorio
 ```bash
-git clone https://github.com/andresciccarelli/reedbe.git
+git clone https://github.com/andresciccarelli/redbee.git
 ```
 2) Posicionarse dentro de la carpeta Resources.
 ```bash
-cd reedbe/Resources/
+cd redbee/Resources/
 ```
 3) Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml con un editor de texto.
    
