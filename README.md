@@ -1,6 +1,6 @@
 # Redbee Challenge - Simpsons Quotes API
 
-![Arquitecture](images/Redbee.png)
+![Redbee](images/Redbee.png) ![Simpson](images/the-simpson-simpson.gif)
 
 ## Prerequisitos
 * Minikube instalado y funcionando.
@@ -14,7 +14,7 @@ minikube addons enable ingress
 ```
 
 ### Arquitectura a desplegar:
-![Arquitecture](images/architecture.jpg)
+![Arquitecture](images/architecture.jpg) 
 
 ### Pasos:
 1) Clonar este repositorio
@@ -27,7 +27,7 @@ cd Resources
 ```
 3) Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml con un editor de texto.
    
-    - host: simpsons.192-168-49-2.nip.io
+    \- host: simpsons.192-168-49-2.nip.io
    
    En caso de que la dirección ip de minikube sea diferente a 192.168.49.2, **reemplazar los octetos correspondientes, separados por guiones** y guardar los cambios.
    
