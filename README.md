@@ -1,5 +1,5 @@
 # Redbee Challenge - Simpsons Quotes API
-![Homero](images/homero.gif) 
+![Homero](images/homero.jpg) 
 
 ## Pre-requisitos
 * Minikube instalado y funcionando.
@@ -26,7 +26,7 @@ cd Resources
 ```
 3) Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml con un editor de texto.
    
-    \- host: simpsons.192-168-49-2.nip.io
+    \- host: simpsons.***192-168-49-2***.nip.io
    
    En caso de que la dirección ip de minikube sea diferente a 192.168.49.2, **reemplazar los octetos correspondientes, separados por guiones** y guardar los cambios.
    
@@ -40,6 +40,6 @@ kubectl create -f .
 
 * Dentro de la misma PC, ingresar con un navegador a la dirección.
 ```bash
-http://simpsons.192-168-49-2.nip.io/docs
+http://simpsons.**192-168-49-2**.nip.io/docs
 ```
 En caso de haber reemplazado este dominio en el paso 3, ingresar la url correcta.
