@@ -1,22 +1,37 @@
 # Redbee Challenge - Simpsons Quotes API
 
-![Arquitecture](images/homer-simpson.gif)
-quotes
-## Enunciado
+![Arquitecture](images/Redbee.png)
 
-Se tiene una API hecha en Python con FastApi+SQLAlchemy y su correspondiente Base de datos en MySQL.
+## Prerequisitos
+* Minikube instalado y funcionando.
+* Obtener la ip del cluster a través del siguiente comando:
+```bash
+minikube ip
+*Intalar addons ingress
+```bash
+minikube addons enable ingress
+```
+### Pasos:
+*Clonar este repositorio
+```bash
+git clone https://
+```
+* Dentro de la carpeta redbee crear primero en namespace donnde se desplegarn los recursos.
+```bash
+cd redbee
+```
+* Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml.
+- host: simpsons.192-168-49-2.nip.io
+En caso de que la dirección ip de minikube sea diferente a 192.168.49.2, reemplazar los octetos correspondientes, separados por guiones.
 
-Al momento la misma se encuentra dockerizada y se puede ejecutar localmente (Ver ejemplo).
+```bash
+kubectl create -f simpsons-namespace.yaml
+```
 
-Para permitir la alta disponibilidad de la aplicación, se deberá levantar un cluster de **Kubernetes**
-### Objetivos:
-
-* Buildear la imagen de la API y subirla a la registry de docker que utilice el cluster.
-* Generar los correspondientes Deployments para las aplicaciones y verificar que están visibles entre sí utilizando el objeto Service.
-* Generar un Volumen persistente para la Base de datos.
-* Generar un Secrets de K8S para evitar acceder a la contraseña de la base por texto plano.
-* Generar el Ingress para que la API sea accesible y pueda consultarse mediante curl, o desde un navegador.
-
+* Los demás recursos se pueden crear ejecutando:
+```bash
+kubectl create -f .
+```
 ![Arquitecture](images/arquitecture.jpg)
 
 ### Opcional:
