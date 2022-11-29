@@ -16,7 +16,7 @@ minikube addons enable ingress
 ![Arquitecture](images/architecture.jpg) 
 
 ### Pasos:
-1) Clonar este repositorio
+1) Clonar este repositorio (en una carpeta vacía)
 ```bash
 git clone https://github.com/andresciccarelli/reedbe.git
 ```
