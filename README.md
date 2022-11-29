@@ -33,6 +33,8 @@ cd redbee/Resources/
 4) Crear primero el namespace y luego los demás recursos:
 ```bash
 kubectl create -f simpsons-namespace.yaml
+```
+```bash
 kubectl create -f .
 ```
 
