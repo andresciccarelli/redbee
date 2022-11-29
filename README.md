@@ -12,6 +12,10 @@ minikube ip
 ```bash
 minikube addons enable ingress
 ```
+
+### Arquitectura a desplegar:
+![Arquitecture](images/architecture.jpg)
+
 ### Pasos:
 1) Clonar este repositorio
 ```bash
@@ -23,7 +27,7 @@ cd Resources
 ```
 3) Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml con un editor de texto.
    
-   - host: simpsons.192-168-49-2.nip.io"
+   -- host: simpsons.192-168-49-2.nip.io
    
    En caso de que la dirección ip de minikube sea diferente a 192.168.49.2, reemplazar los octetos correspondientes, separados por guiones y guardar los cambios.
    
@@ -32,8 +36,6 @@ cd Resources
 kubectl create -f simpsons-namespace.yaml
 kubectl create -f .
 ```
-### Arquitectura desplegada:
-![Arquitecture](images/architecture.jpg)
 
 ### Test de funcionamiento:
 
