@@ -36,7 +36,6 @@ kubectl create -f simpsons-namespace.yaml
 ```
 ```bash
 kubectl create -f mysql-secrets.yaml
-kubectl create -f mysql-secrets.yaml
 kubectl create -f mysql-initdb-configmap.yaml
 kubectl create -f simpsons-api-secrets.yaml
 kubectl create -f simpsons-api-configmap.yaml
