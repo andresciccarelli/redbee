@@ -35,7 +35,16 @@ cd redbee/Resources/
 kubectl create -f simpsons-namespace.yaml
 ```
 ```bash
-kubectl create -f .
+kubectl create -f mysql-secrets.yaml
+kubectl create -f mysql-secrets.yaml
+kubectl create -f mysql-initdb-configmap.yaml
+kubectl create -f simpsons-api-secrets.yaml
+kubectl create -f simpsons-api-configmap.yaml
+kubectl create -f mysql-statefulSet.yaml
+kubectl create -f mysql-headless.yaml
+kubectl create -f simpsons-api-deployment.yaml
+kubectl create -f simpsons-api-svc.yaml
+kubectl create -f simpsons-api-ingress.yaml
 ```
 
 ### Test de funcionamiento:
