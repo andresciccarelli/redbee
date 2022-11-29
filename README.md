@@ -16,13 +16,13 @@ minikube addons enable ingress
 ![Arquitecture](images/architecture.jpg) 
 
 ### Pasos:
-1) Clonar este repositorio (en una carpeta vacía)
+1) Clonar este repositorio
 ```bash
 git clone https://github.com/andresciccarelli/reedbe.git
 ```
 2) Posicionarse dentro de la carpeta Resources.
 ```bash
-cd Resources
+cd reedbe/Resources/
 ```
 3) Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml con un editor de texto.
    
