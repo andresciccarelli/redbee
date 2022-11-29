@@ -27,9 +27,9 @@ cd Resources
 ```
 3) Revisar la línea 10 del archivo Resources/simpsons-api-ingress.yaml con un editor de texto.
    
-   -- host: simpsons.192-168-49-2.nip.io
+    - host: simpsons.192-168-49-2.nip.io
    
-   En caso de que la dirección ip de minikube sea diferente a 192.168.49.2, reemplazar los octetos correspondientes, separados por guiones y guardar los cambios.
+   En caso de que la dirección ip de minikube sea diferente a 192.168.49.2, **reemplazar los octetos correspondientes, separados por guiones** y guardar los cambios.
    
 4) Crear primero el namespace y luego los demás recursos:
 ```bash
