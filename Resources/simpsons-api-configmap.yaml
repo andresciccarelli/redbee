@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap  
+metadata:
+  name: simpsons-api-cm
+  namespace: simpsons-ns
+data:
+  DB_HOST: "mysql-service.simpsons-ns.svc.cluster.local"
+  DB_PORT: "3306"
